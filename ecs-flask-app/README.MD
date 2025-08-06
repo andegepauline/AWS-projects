@@ -13,17 +13,29 @@ This project demonstrates how to package a Python Flask application into a Docke
 
 ## Project Structure
 ```text
-project-root/
+ecs-flask-app/
 ├── app.py              
 ├── requirements.txt   
-├── Dockerfile
+├── dockerfile           
+├── README.md
+└── screenshots/
+    ├── alb_created_active.png
+    ├── dockerimage_build_and_run.png
+    ├── ecr_docker_push_success.png
+    ├── ecr_pushed_image.png 
+    ├── ecs_cluster_created.png
+    ├── flask_service_successfully_deployed.png
+    ├── target_group_created.png
+    ├── task_definition_created.png
+    └── testing.png    
 ```
+
 
 ## Tech Stack & AWS Services Used
 
 - Flask – Lightweight Python web framework.
 - Docker – Containerized the Flask app.
-- Amazon ECR (Elastic Container Registry)** – Stored Docker image.
+- Amazon ECR (Elastic Container Registry) – Stored Docker image.
 - Amazon ECS (Elastic Container Service) – Managed containers.
 - Fargate – Serverless compute engine for containers.
 - Application Load Balancer – Routed traffic to ECS service.
@@ -96,7 +108,7 @@ project-root/
 *Shows image listed in ECR*
 
 ### ECS cluster and task definitions
-![Cluster](./screenshots/ecs_sluster_created.png)
+![Cluster](./screenshots/ecs_cluster_created.png)
 *Shows the ECS cluster I created (flask-cluster-2)*
 
 ![Task definition](./screenshots/task_definition_created.png)  
@@ -114,7 +126,7 @@ project-root/
 *Confirms your ECS service was deployed and task is attached to ALB*
 
 ![testig](./screenshots/testing.png)  
-*the app was tested live using the ALB DNS URL, and it responded correctly.*
+*The app was tested live using the ALB DNS URL, and it responded correctly.*
 
 
 ## Skills Gained
