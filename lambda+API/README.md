@@ -96,6 +96,6 @@ All AWS resources (Lambda, API Gateway, DynamoDB) were manually deleted after pr
 
 ## 👩‍💻 Author
 
-Built by Pauline Andege as part of an AWS projects.
+Built by Pauline Andege as part of AWS projects.
 
 

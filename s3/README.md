@@ -27,7 +27,7 @@ This project demonstrates how to host a static website using Amazon S3. It inclu
 
 
 ## 📁 Folder structure
-
+```text
 my-static-site/
 │
 ├── index.html
@@ -37,7 +37,7 @@ my-static-site/
     ├── bucket-policy.png
     ├── live-website.png
     └── s3-uploads.png
-
+```
 
 ## 🔧 Steps I followed
 ### 1. Created an S3 Bucket:
@@ -52,7 +52,7 @@ my-static-site/
 
 ### 4. Made the bucket public:
 - Added a bucket policy to allow public access.
- 
+```json
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -65,13 +65,20 @@ my-static-site/
     }
   ]
 }
-
+```
 
 ## 📸 Screenshots
-✅ Static website hosting enabled in S3 (static-hosting-enabled.png)
-✅ Bucket policy added for public access (bucket-policy.png)
-✅ Website files uploaded to S3 (s3-uploads.png)
-✅ Live website in browser (live-website.png)
+### Static website hosting enabled in S3
+![static hosting](./screenshots/static-hosting-enabled.png)
+
+### Bucket policy added for public access
+![bucket policy](./screenshots/bucket-policy.png)
+
+### Website files uploaded to S3 
+![uploads](./screenshots/s3-uploads.png)
+
+### Live website in browser
+![live testing](./screenshots/live-website.png)
 
 
 ## 🧠 What I learned
@@ -93,7 +100,7 @@ This was my first deployment of a static website on AWS. I learned how to:
 
 ## 👩‍💻 Author
 
-Built by Pauline Andege as part of an AWS projects.
+Built by Pauline Andege as part of AWS projects.
 
 
 

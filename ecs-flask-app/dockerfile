@@ -1,0 +1,23 @@
+# Use official Python base image
+FROM python:3.10-slim
+
+# Set env variable to avoid buffering issues
+ENV PYTHONUNBUFFERED=1
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the requirements file into the container
+COPY requirements.txt .
+
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of your app code into the container
+COPY . .
+
+# Make port 5000 available to the outside
+EXPOSE 5000
+
+# Command to run the app
+CMD ["python", "app.py"]
