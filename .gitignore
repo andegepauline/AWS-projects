@@ -1,9 +1,9 @@
-# Ignore Terraform local files and state
-terraform-ec2-nginx/.terraform/
-terraform-ec2-nginx/terraform.tfstate
-terraform-ec2-nginx/terraform.tfstate.backup
-terraform-ec2-nginx/.terraform.lock.hcl
+# Ignore Terraform binaries and state files
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+.terraform.lock.hcl
 
-# OS-specific files
+# Ignore OS files
 .DS_Store
 Thumbs.db
