@@ -1,9 +1,18 @@
-# Ignore Terraform binaries and state files
-.terraform/
-terraform.tfstate
-terraform.tfstate.backup
-.terraform.lock.hcl
+# Terraform ignore rules
 
-# Ignore OS files
+# Ignores terraform directories and provider binaries
+**/.terraform/
+
+# Ignores terraform state files
+**/*.tfstate
+**/*.tfstate.backup
+
+# Ignores lock files
+**/.terraform.lock.hcl
+
+# Ignores crash logs
+crash.log
+
+# Ignores OS files
 .DS_Store
 Thumbs.db
